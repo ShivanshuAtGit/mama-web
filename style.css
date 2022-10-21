@@ -8,6 +8,10 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    font-family: 'Lato';
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -20,11 +24,13 @@ html{
 
 .hero-section{
     display: flex;
+    width: 100vw;
 }
 
 .hero-image{
     height: 600px;
     width: 50%;
+    margin-left: -25px;
 }
 
 .hero-image img {
@@ -35,7 +41,66 @@ html{
     font-size: 35px;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .hero-text p {
     font-size: 18px;
+    margin-top: 20px;
 }
+
+.footer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact h5 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.contact h4 {
+    font-size: 18px;
+}
+
+.useful-links {
+    display: flex;
+    list-style: none;
+}
+
+.useful-links li {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section{
+        flex-direction: column;
+    }  
+    
+    .footer {
+        flex-direction: column;
+    }
+
+    .hero-image{
+        width: 90%;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+  }
